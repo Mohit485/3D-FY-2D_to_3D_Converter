@@ -97,7 +97,7 @@ B.Tech Artificial Intelligence and Machine Learning
 JB Institute of Technology, Dehradun  
 [LinkedIn](https://www.linkedin.com/in/mohit-aditya-55506b255/) 
 [GitHub](https://github.com/Mohit485)
-
+[Notion](https://app.notion.com/p/Mohit-Aditya-37ed29052bd9801d80adec7e68a77ef4?source=copy_link)
 -----------------------------
 
 ## Acknowledgements
