@@ -13,8 +13,8 @@ View and run the complete project on Kaggle:
 
 -----
 # Sample Output
-| ![input - anaglyph comparison](assets/Original.gif) |  
-| ![input - depth comparison](assets/narcomp.gif) |
+ ![input - anaglyph comparison](assets/Original.gif)   
+ ![input - depth comparison](assets/narcomp.gif) 
 -----------------------
   ## How It Works
 Input Video → Frame Extraction → MiDaS Depth Estimation → Pixel Shifting → Stereoscopic Synthesis → Output Video
@@ -35,7 +35,7 @@ The project runs as a Gradio web interface, deployed two ways:
 - **Hugging Face Spaces (ZeroGPU)** — a persistent, always-available public app
 - **Kaggle Notebook** — runs on a free T4 GPU and generates a temporary public link, no local GPU needed
 
-![interface screenshot](assets/interface_ss.png)
+![interface screenshot](assets/3d_interface.png)
 --------------------------
 ## Tech Stack
 
