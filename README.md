@@ -1,5 +1,9 @@
 # 🎬 3D-FY — AI-Powered 2D to 3D Video Converter
-Convert any standard 2D video into immersive 3D formats using monocular depth estimation. Outputs are ready for Red-Cyan glasses, VR headsets and 3D visualization — all running on a free Kaggle GPU.
+Convert any standard 2D video into immersive 3D formats using monocular depth estimation. Outputs are ready for Red-Cyan glasses, VR headsets and 3D visualization — now available as a live web app, with the original free Kaggle GPU version also preserved.
+
+## Try It Live
+
+🔗 **[3D-FY on Hugging Face Spaces](https://huggingface.co/spaces/Madiy/3D-FY)** — no setup, no GPU needed, runs on ZeroGPU
 
 ## Kaggle Notebook
 
@@ -26,8 +30,10 @@ Input Video → Frame Extraction → MiDaS Depth Estimation → Pixel Shifting �
 -------------------------
 ## 🖥️ Interface
 
-The project includes a Gradio web interface that runs on Kaggle GPU and generates
-a public link accessible from any device — no local GPU needed.
+The project runs as a Gradio web interface, deployed two ways:
+
+- **Hugging Face Spaces (ZeroGPU)** — a persistent, always-available public app
+- **Kaggle Notebook** — runs on a free T4 GPU and generates a temporary public link, no local GPU needed
 
 ![interface screenshot](assets/interface_ss.png)
 --------------------------
@@ -41,12 +47,17 @@ a public link accessible from any device — no local GPU needed.
 | NumPy | Vectorized pixel shifting |
 | Gradio | Interactive web interface |
 | ffmpeg | Audio preservation |
-| Kaggle T4 GPU | Free compute |
+| Hugging Face Spaces (ZeroGPU) | Persistent live deployment |
+| Kaggle T4 GPU | Free compute (notebook version) |
 
 ---------------------------
 ## Run It Yourself
 
-This project is designed to run on **Kaggle Notebooks** with a free T4 GPU.
+### Option 1 — Hugging Face Spaces (recommended)
+Just open the live link above — no setup required.
+
+### Option 2 — Kaggle Notebook
+This project is also designed to run on **Kaggle Notebooks** with a free T4 GPU.
 
 1. Go to [kaggle.com](https://kaggle.com) and create a free account
 2. Create a new notebook and enable GPU: 
@@ -77,6 +88,8 @@ This project is designed to run on **Kaggle Notebooks** with a free T4 GPU.
 - Temporal consistency currently uses EMA smoothing — proper video-aware 
   depth models are identified as future work
 - Real-time inference requires model optimization (TensorRT, ONNX export)
+- On Hugging Face Spaces, processing is capped to fit within ZeroGPU's 
+  fixed execution window — longer clips are trimmed to a shorter length
 
 -----------------------------
 
@@ -107,4 +120,4 @@ JB Institute of Technology, Dehradun
 - [StereoCrafter](https://github.com/TencentARC/StereoCrafter) paper for 
   establishing the problem benchmark
 - Kaggle for free GPU compute
-
+- Hugging Face for ZeroGPU Spaces hosting
