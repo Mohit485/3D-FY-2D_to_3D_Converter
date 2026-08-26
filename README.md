@@ -105,7 +105,7 @@ depth estimation, stereoscopic synthesis methods, and comparison of existing pip
 
 ## Author
 
-**Mohit Aditya**  
+*Mohit Aditya*  
 B.Tech Artificial Intelligence and Machine Learning  
 JB Institute of Technology, Dehradun  
 [LinkedIn](https://www.linkedin.com/in/mohit-aditya-55506b255/) 
