@@ -6,6 +6,18 @@
 [![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-blue)](https://www.kaggle.com/code/mohiadiy/3d-fy-ai-driven-2d-to-3d-converter/edit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+
+<div align="center">
+  <img src="assets/Original.gif" alt="3D-FY Demo Preview" width="75%">
+</div>
+
+<div align="center">
+  <img src="assets/narcomp.gif" alt="3D-FY Demo Preview" width="75%">
+</div>
+
+<div align="center">
+  <img src="assets/sbs.gif" alt="3D-FY Demo Preview" width="75%">
+</div>
 ---
 
 ## 📌 About the Project
