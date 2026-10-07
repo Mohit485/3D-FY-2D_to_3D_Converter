@@ -3,7 +3,7 @@
 > Convert standard flat 2D videos into immersive stereoscopic 3D experiences using monocular depth estimation, sub-pixel parallax remapping, and real-time GPU streaming.
 
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-yellow)](https://huggingface.co/spaces/Madiy/3D-FY)
-[![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-blue)]([https://www.kaggle.com/code/mohiadiy/3d-fy-ai-driven-2d-to-3d-converter/edit](https://www.kaggle.com/code/mohiadiy/3dfy-fixed/edit/run/351261067)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-blue)](https://www.kaggle.com/code/mohiadiy/3dfy-fixed)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 
@@ -98,7 +98,7 @@ Try the interactive web app directly in your browser without any setup:
 
 For long-form videos and high-resolution spatial synthesis, check out our optimized **Kaggle Notebook**:
 
-[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)]([https://www.kaggle.com](https://www.kaggle.com/code/mohiadiy/3dfy-fixed/edit/run/351261067)) <!-- Replace link with your actual Kaggle notebook URL -->
+[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/mohiadiy/3dfy-fixed) <!-- Replace link with your actual Kaggle notebook URL -->
 
 * **Upgraded Depth Backbone:** Powered by **Depth Anything V2** (`vitl`) for sharp boundary estimation and reduced depth bleeding.
 * **Line-Art Edge Repair:** Features dilated Telea inpainting (`cv2.INPAINT_TELEA`) and bilateral depth filtering to eliminate disocclusion artifacts and dark edge holes (optimized for anime and cel-shaded media).
