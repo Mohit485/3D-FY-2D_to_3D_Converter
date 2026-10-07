@@ -94,14 +94,15 @@ Try the interactive web app directly in your browser without any setup:
 
 > 📌 **Note on Processing Limits:** > The Hugging Face Space runs on shared **ZeroGPU** infrastructure and caps video generation to **15 seconds** per run to manage time budgets. For longer video processing, use the Kaggle Notebook option below.
 
-### Option 2: Kaggle Notebook (Full Processing & Free GPU)
-To process full-length videos or experiment with the pipeline source code:
+### ⚡ High-Performance Batch Processing (Kaggle / Depth Anything V2)
 
-1. Open the **[3D-FY Kaggle Notebook](https://www.kaggle.com/code/mohiadiy/3d-fy-ai-driven-2d-to-3d-converter/edit)**.
-2. Click **Copy & Edit** in the top right corner.
-3. Enable GPU Acceleration: `Settings` → `Accelerator` → `GPU T4`.
-4. Run the setup cells and update `VIDEO_PATH` with your uploaded video file.
-5. Execute all cells to generate and download full-length 3D outputs.
+For long-form videos and high-resolution spatial synthesis, check out our optimized **Kaggle Notebook**:
+
+[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/) <!-- Replace link with your actual Kaggle notebook URL -->
+
+* **Upgraded Depth Backbone:** Powered by **Depth Anything V2** (`vitl`) for sharp boundary estimation and reduced depth bleeding.
+* **Line-Art Edge Repair:** Features dilated Telea inpainting (`cv2.INPAINT_TELEA`) and bilateral depth filtering to eliminate disocclusion artifacts and dark edge holes (optimized for anime and cel-shaded media).
+* **Temporal Stability & Audio Sync:** Employs exponential moving average (EMA) smoothing with global quantile scale tracking to prevent depth flickering, alongside non-blocking FFmpeg audio remuxing.
 
 ---
 
